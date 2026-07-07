@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconle - Guess the Brand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Iconle</h1>
+            <p>Guess the brand or app from its icon</p>
+        </header>
+
+        <div class="game-board">
+            <div class="icon-display">
+                <img id="iconImage" src="" alt="Mystery icon" class="icon">
+                <p class="zoom-level">Zoom: <span id="zoomPercent">100</span>%</p>
+            </div>
+
+            <div class="info-panel">
+                <p>Wrong guesses remaining: <span id="guessesLeft">6</span> / 6</p>
+                <div class="attempts-display">
+                    <div id="attemptsList"></div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <input 
+                    type="text" 
+                    id="guessInput" 
+                    placeholder="Type your guess..." 
+                    autocomplete="off"
+                >
+                <button id="submitBtn">Guess</button>
+            </div>
+
+            <div id="message" class="message"></div>
+
+            <button id="newGameBtn" class="hidden">New Game</button>
+        </div>
+
+        <footer>
+            <p>Get closer with each wrong guess. How fast can you guess them all?</p>
+        </footer>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

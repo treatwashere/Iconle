@@ -1,0 +1,94 @@
+{
+  "brands": [
+    {
+      "id": 1,
+      "name": "Google",
+      "icon": "https://www.google.com/favicon.ico",
+      "aliases": ["google", "search engine", "alphabet"]
+    },
+    {
+      "id": 2,
+      "name": "Apple",
+      "icon": "https://www.apple.com/favicon.ico",
+      "aliases": ["apple", "ios", "mac", "iphone"]
+    },
+    {
+      "id": 3,
+      "name": "Microsoft",
+      "icon": "https://www.microsoft.com/favicon.ico",
+      "aliases": ["microsoft", "windows", "office", "xbox"]
+    },
+    {
+      "id": 4,
+      "name": "Amazon",
+      "icon": "https://www.amazon.com/favicon.ico",
+      "aliases": ["amazon", "aws", "prime"]
+    },
+    {
+      "id": 5,
+      "name": "Meta",
+      "icon": "https://www.meta.com/favicon.ico",
+      "aliases": ["meta", "facebook", "facebook"]
+    },
+    {
+      "id": 6,
+      "name": "X",
+      "icon": "https://x.com/favicon.ico",
+      "aliases": ["x", "twitter", "elon", "tweet"]
+    },
+    {
+      "id": 7,
+      "name": "GitHub",
+      "icon": "https://github.com/favicon.ico",
+      "aliases": ["github", "git", "coding"]
+    },
+    {
+      "id": 8,
+      "name": "Slack",
+      "icon": "https://slack.com/favicon.ico",
+      "aliases": ["slack", "chat", "workspace"]
+    },
+    {
+      "id": 9,
+      "name": "Spotify",
+      "icon": "https://www.spotify.com/favicon.ico",
+      "aliases": ["spotify", "music", "streaming"]
+    },
+    {
+      "id": 10,
+      "name": "YouTube",
+      "icon": "https://www.youtube.com/favicon.ico",
+      "aliases": ["youtube", "video", "google"]
+    },
+    {
+      "id": 11,
+      "name": "Netflix",
+      "icon": "https://www.netflix.com/favicon.ico",
+      "aliases": ["netflix", "streaming", "movies"]
+    },
+    {
+      "id": 12,
+      "name": "LinkedIn",
+      "icon": "https://www.linkedin.com/favicon.ico",
+      "aliases": ["linkedin", "jobs", "professional"]
+    },
+    {
+      "id": 13,
+      "name": "Discord",
+      "icon": "https://discord.com/favicon.ico",
+      "aliases": ["discord", "voice", "gaming", "chat"]
+    },
+    {
+      "id": 14,
+      "name": "Figma",
+      "icon": "https://www.figma.com/favicon.ico",
+      "aliases": ["figma", "design", "ui", "ux"]
+    },
+    {
+      "id": 15,
+      "name": "Docker",
+      "icon": "https://www.docker.com/favicon.ico",
+      "aliases": ["docker", "containers", "devops"]
+    }
+  ]
+}
