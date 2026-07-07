@@ -6,9 +6,11 @@ class Iconle {
         this.currentBrand = null;
         this.gameOver = false;
         this.won = false;
-        this.zoomLevels = [100, 85, 70, 55, 40, 25, 10];
+        this.zoomLevels = [100, 98, 96, 94, 92, 90, 88];
         this.currentZoom = 0;
         this.allBrands = [];
+        this.blurLevels = [35, 33, 31, 29, 27, 25, 23];
+        this.gamesPlayed = 0;
 
         this.initializeElements();
         this.loadBrands();
@@ -57,7 +59,6 @@ class Iconle {
         this.guessInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') this.makeGuess();
         });
-        this.newGameBtn.addEventListener('click', () => this.startNewGame());
     }
 
     startNewGame() {
@@ -87,7 +88,7 @@ class Iconle {
     }
 
     makeGuess() {
-        if (this.gameOver || this.won) return;
+        if (this.gameOver) return;
 
         const guess = this.guessInput.value.trim().toLowerCase();
 
@@ -109,7 +110,9 @@ class Iconle {
             this.showMessage(`🎉 Correct! It's ${this.currentBrand.name}!`, 'success');
             this.guessInput.disabled = true;
             this.submitBtn.disabled = true;
-            this.newGameBtn.classList.remove('hidden');
+            
+            // Auto-start new game after 2 seconds
+            setTimeout(() => this.startNewGame(), 2000);
             return;
         }
 
@@ -127,10 +130,12 @@ class Iconle {
             this.showMessage(`💔 Game Over! It was ${this.currentBrand.name}.`, 'error');
             this.guessInput.disabled = true;
             this.submitBtn.disabled = true;
-            this.newGameBtn.classList.remove('hidden');
 
             // Reveal full icon
             this.currentZoom = this.zoomLevels.length - 1;
+
+            // Auto-start new game after 2 seconds
+            setTimeout(() => this.startNewGame(), 2000);
         }
 
         this.updateDisplay();
@@ -160,18 +165,9 @@ class Iconle {
         this.iconImage.src = this.currentBrand.icon;
         this.iconImage.alt = `Mystery icon - zoomed to ${this.zoomLevels[this.currentZoom]}%`;
 
-        // Remove all blur classes
-        this.iconImage.classList.remove('blur-light', 'blur-medium', 'blur-heavy');
-
-        // Add appropriate blur based on zoom level
-        const zoom = this.zoomLevels[this.currentZoom];
-        if (zoom >= 80) {
-            this.iconImage.classList.add('blur-heavy');
-        } else if (zoom >= 50) {
-            this.iconImage.classList.add('blur-medium');
-        } else if (zoom >= 25) {
-            this.iconImage.classList.add('blur-light');
-        }
+        // Apply blur based on current zoom level
+        const blurAmount = this.blurLevels[this.currentZoom];
+        this.iconImage.style.filter = `blur(${blurAmount}px)`;
     }
 
     updateAttemptsList() {
