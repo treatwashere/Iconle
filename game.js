@@ -9,7 +9,7 @@ class Iconle {
         this.zoomLevels = [100, 98, 96, 94, 92, 90, 88];
         this.currentZoom = 0;
         this.allBrands = [];
-        this.blurLevels = [35, 33, 31, 29, 27, 25, 23];
+        this.blurLevels = [12, 10, 8, 6, 4, 2, 0];
         this.gamesPlayed = 0;
 
         this.initializeElements();
