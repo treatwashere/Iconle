@@ -59,17 +59,17 @@ header p {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     transition: all 0.3s ease;
-    filter: blur(35px);
-    position: absolute;
-    top: -100px;
-    left: -100px;
+    filter: blur(12px);
 }
 
 .zoom-level {
@@ -223,13 +223,6 @@ footer {
     .icon-container {
         width: 150px;
         height: 150px;
-    }
-
-    .icon {
-        width: 300px;
-        height: 300px;
-        top: -75px;
-        left: -75px;
     }
 
     .input-area {
