@@ -1,94 +1,58 @@
 {
-  "brands": [
-    {
-      "id": 1,
-      "name": "Google",
-      "icon": "https://www.google.com/favicon.ico",
-      "aliases": ["google", "search engine", "alphabet"]
-    },
-    {
-      "id": 2,
-      "name": "Apple",
-      "icon": "https://www.apple.com/favicon.ico",
-      "aliases": ["apple", "ios", "mac", "iphone"]
-    },
-    {
-      "id": 3,
-      "name": "Microsoft",
-      "icon": "https://www.microsoft.com/favicon.ico",
-      "aliases": ["microsoft", "windows", "office", "xbox"]
-    },
-    {
-      "id": 4,
-      "name": "Amazon",
-      "icon": "https://www.amazon.com/favicon.ico",
-      "aliases": ["amazon", "aws", "prime"]
-    },
-    {
-      "id": 5,
-      "name": "Meta",
-      "icon": "https://www.meta.com/favicon.ico",
-      "aliases": ["meta", "facebook", "facebook"]
-    },
-    {
-      "id": 6,
-      "name": "X",
-      "icon": "https://x.com/favicon.ico",
-      "aliases": ["x", "twitter", "elon", "tweet"]
-    },
-    {
-      "id": 7,
-      "name": "GitHub",
-      "icon": "https://github.com/favicon.ico",
-      "aliases": ["github", "git", "coding"]
-    },
-    {
-      "id": 8,
-      "name": "Slack",
-      "icon": "https://slack.com/favicon.ico",
-      "aliases": ["slack", "chat", "workspace"]
-    },
-    {
-      "id": 9,
-      "name": "Spotify",
-      "icon": "https://www.spotify.com/favicon.ico",
-      "aliases": ["spotify", "music", "streaming"]
-    },
-    {
-      "id": 10,
-      "name": "YouTube",
-      "icon": "https://www.youtube.com/favicon.ico",
-      "aliases": ["youtube", "video", "google"]
-    },
-    {
-      "id": 11,
-      "name": "Netflix",
-      "icon": "https://www.netflix.com/favicon.ico",
-      "aliases": ["netflix", "streaming", "movies"]
-    },
-    {
-      "id": 12,
-      "name": "LinkedIn",
-      "icon": "https://www.linkedin.com/favicon.ico",
-      "aliases": ["linkedin", "jobs", "professional"]
-    },
-    {
-      "id": 13,
-      "name": "Discord",
-      "icon": "https://discord.com/favicon.ico",
-      "aliases": ["discord", "voice", "gaming", "chat"]
-    },
-    {
-      "id": 14,
-      "name": "Figma",
-      "icon": "https://www.figma.com/favicon.ico",
-      "aliases": ["figma", "design", "ui", "ux"]
-    },
-    {
-      "id": 15,
-      "name": "Docker",
-      "icon": "https://www.docker.com/favicon.ico",
-      "aliases": ["docker", "containers", "devops"]
-    }
-  ]
+    "brands": [
+          { "id": 1, "name": "Google", "icon": "https://www.google.com/favicon.ico", "aliases": ["google", "search engine", "alphabet"] },
+          { "id": 2, "name": "Apple", "icon": "https://www.apple.com/favicon.ico", "aliases": ["apple", "ios", "mac", "iphone"] },
+          { "id": 3, "name": "Microsoft", "icon": "https://www.microsoft.com/favicon.ico", "aliases": ["microsoft", "windows", "office", "xbox"] },
+          { "id": 4, "name": "Amazon", "icon": "https://www.amazon.com/favicon.ico", "aliases": ["amazon", "aws", "prime"] },
+          { "id": 5, "name": "Meta", "icon": "https://www.meta.com/favicon.ico", "aliases": ["meta", "facebook"] },
+          { "id": 6, "name": "X", "icon": "https://x.com/favicon.ico", "aliases": ["x", "twitter", "elon", "tweet"] },
+          { "id": 7, "name": "GitHub", "icon": "https://github.com/favicon.ico", "aliases": ["github", "git", "coding"] },
+          { "id": 8, "name": "Slack", "icon": "https://slack.com/favicon.ico", "aliases": ["slack", "chat", "workspace"] },
+          { "id": 9, "name": "Spotify", "icon": "https://www.spotify.com/favicon.ico", "aliases": ["spotify", "music", "streaming"] },
+          { "id": 10, "name": "YouTube", "icon": "https://www.youtube.com/favicon.ico", "aliases": ["youtube", "video", "google"] },
+          { "id": 11, "name": "Netflix", "icon": "https://www.netflix.com/favicon.ico", "aliases": ["netflix", "streaming", "movies"] },
+          { "id": 12, "name": "LinkedIn", "icon": "https://www.linkedin.com/favicon.ico", "aliases": ["linkedin", "jobs", "professional"] },
+          { "id": 13, "name": "Discord", "icon": "https://discord.com/favicon.ico", "aliases": ["discord", "voice", "gaming", "chat"] },
+          { "id": 14, "name": "Figma", "icon": "https://www.figma.com/favicon.ico", "aliases": ["figma", "design", "ui", "ux"] },
+          { "id": 15, "name": "Docker", "icon": "https://www.docker.com/favicon.ico", "aliases": ["docker", "containers", "devops"] },
+          { "id": 16, "name": "Instagram", "icon": "https://www.instagram.com/favicon.ico", "aliases": ["instagram", "ig", "insta"] },
+          { "id": 17, "name": "WhatsApp", "icon": "https://www.whatsapp.com/favicon.ico", "aliases": ["whatsapp", "wa"] },
+          { "id": 18, "name": "TikTok", "icon": "https://www.tiktok.com/favicon.ico", "aliases": ["tiktok", "douyin"] },
+          { "id": 19, "name": "Telegram", "icon": "https://telegram.org/favicon.ico", "aliases": ["telegram", "tg"] },
+          { "id": 20, "name": "Reddit", "icon": "https://www.redditstatic.com/favicon.ico", "aliases": ["reddit", "subreddit"] },
+          { "id": 21, "name": "Pinterest", "icon": "https://www.pinterest.com/favicon.ico", "aliases": ["pinterest", "pins", "boards"] },
+          { "id": 22, "name": "Snapchat", "icon": "https://www.snapchat.com/favicon.ico", "aliases": ["snapchat", "snap"] },
+          { "id": 23, "name": "Uber", "icon": "https://www.uber.com/favicon.ico", "aliases": ["uber", "rideshare", "taxi"] },
+          { "id": 24, "name": "Airbnb", "icon": "https://www.airbnb.com/favicon.ico", "aliases": ["airbnb", "rental", "vacation"] },
+          { "id": 25, "name": "PayPal", "icon": "https://www.paypal.com/favicon.ico", "aliases": ["paypal", "payment"] },
+          { "id": 26, "name": "Adobe", "icon": "https://www.adobe.com/favicon.ico", "aliases": ["adobe", "photoshop", "creative cloud"] },
+          { "id": 27, "name": "Canva", "icon": "https://www.canva.com/favicon.ico", "aliases": ["canva", "design"] },
+          { "id": 28, "name": "Zoom", "icon": "https://www.zoom.com/favicon.ico", "aliases": ["zoom", "video call", "meeting"] },
+          { "id": 29, "name": "Dropbox", "icon": "https://www.dropbox.com/favicon.ico", "aliases": ["dropbox", "cloud storage"] },
+          { "id": 30, "name": "Trello", "icon": "https://trello.com/favicon.ico", "aliases": ["trello", "boards", "kanban"] },
+          { "id": 31, "name": "Notion", "icon": "https://www.notion.so/favicon.ico", "aliases": ["notion", "notes", "workspace"] },
+          { "id": 32, "name": "Twitch", "icon": "https://www.twitch.tv/favicon.ico", "aliases": ["twitch", "streaming", "gaming"] },
+          { "id": 33, "name": "Steam", "icon": "https://store.steampowered.com/favicon.ico", "aliases": ["steam", "valve", "gaming"] },
+          { "id": 34, "name": "PlayStation", "icon": "https://www.playstation.com/favicon.ico", "aliases": ["playstation", "ps5", "sony"] },
+          { "id": 35, "name": "Nintendo", "icon": "https://www.nintendo.com/favicon.ico", "aliases": ["nintendo", "switch", "mario"] },
+          { "id": 36, "name": "Samsung", "icon": "https://www.samsung.com/favicon.ico", "aliases": ["samsung", "galaxy"] },
+          { "id": 37, "name": "Tesla", "icon": "https://www.tesla.com/favicon.ico", "aliases": ["tesla", "electric car"] },
+          { "id": 38, "name": "Nike", "icon": "https://www.nike.com/favicon.ico", "aliases": ["nike", "swoosh", "sportswear"] },
+          { "id": 39, "name": "Starbucks", "icon": "https://www.starbucks.com/favicon.ico", "aliases": ["starbucks", "coffee"] },
+          { "id": 40, "name": "Coca-Cola", "icon": "https://www.coca-cola.com/favicon.ico", "aliases": ["coca-cola", "coke", "soda"] },
+          { "id": 41, "name": "Walmart", "icon": "https://www.walmart.com/favicon.ico", "aliases": ["walmart", "retail"] },
+          { "id": 42, "name": "eBay", "icon": "https://www.ebay.com/favicon.ico", "aliases": ["ebay", "auction", "marketplace"] },
+          { "id": 43, "name": "Stripe", "icon": "https://stripe.com/favicon.ico", "aliases": ["stripe", "payments", "fintech"] },
+          { "id": 44, "name": "Salesforce", "icon": "https://www.salesforce.com/favicon.ico", "aliases": ["salesforce", "crm"] },
+          { "id": 45, "name": "WordPress", "icon": "https://wordpress.com/favicon.ico", "aliases": ["wordpress", "blog", "cms"] },
+          { "id": 46, "name": "Wikipedia", "icon": "https://www.wikipedia.org/favicon.ico", "aliases": ["wikipedia", "encyclopedia", "wiki"] },
+          { "id": 47, "name": "Firefox", "icon": "https://www.mozilla.org/favicon.ico", "aliases": ["firefox", "mozilla", "browser"] },
+          { "id": 48, "name": "Gmail", "icon": "https://mail.google.com/favicon.ico", "aliases": ["gmail", "email", "google mail"] },
+          { "id": 49, "name": "Skype", "icon": "https://www.skype.com/favicon.ico", "aliases": ["skype", "video call"] },
+          { "id": 50, "name": "SoundCloud", "icon": "https://soundcloud.com/favicon.ico", "aliases": ["soundcloud", "music", "audio"] },
+          { "id": 51, "name": "AWS", "icon": "https://aws.amazon.com/favicon.ico", "aliases": ["aws", "cloud", "amazon web services"] },
+          { "id": 52, "name": "Vercel", "icon": "https://vercel.com/favicon.ico", "aliases": ["vercel", "hosting", "nextjs"] },
+          { "id": 53, "name": "GitLab", "icon": "https://about.gitlab.com/favicon.ico", "aliases": ["gitlab", "git", "devops"] },
+          { "id": 54, "name": "npm", "icon": "https://www.npmjs.com/favicon.ico", "aliases": ["npm", "node package manager", "node"] }
+    ]
 }
