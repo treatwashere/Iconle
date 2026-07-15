@@ -1,53 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iconle - Guess the Brand</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iconle - Guess the Brand</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🎯 Iconle</h1>
-            <p>Guess the brand or app from its icon</p>
-        </header>
+<div class="container">
+<header>
+<div class="header-top">
+<button id="helpBtn" class="icon-btn" title="How to play" aria-label="How to play">?</button>
+<h1>Iconle</h1>
+<div class="header-actions">
+<button id="statsBtn" class="icon-btn" title="Statistics" aria-label="Statistics">📊</button>
+<button id="darkModeBtn" class="icon-btn" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+</div>
+</div>
+<p>Guess the brand or app from its icon</p>
+<div class="mode-bar">
+<div class="mode-toggle">
+<button id="dailyModeBtn" class="mode-btn active">Daily Challenge</button>
+<button id="practiceModeBtn" class="mode-btn">Practice</button>
+</div>
+<label class="hard-mode-label">
+<input type="checkbox" id="hardModeToggle">
+Hard Mode
+</label>
+</div>
+</header>
 
-        <div class="game-board">
-            <div class="icon-display">
-                <div class="icon-container">
-                    <img id="iconImage" src="" alt="Mystery icon" class="icon">
-                </div>
-                <p class="zoom-level">Zoom: <span id="zoomPercent">100</span>%</p>
-            </div>
+<div class="game-board">
+<div class="icon-display">
+<div class="icon-container">
+<img id="iconImage" src="" alt="Mystery icon" class="icon">
+</div>
+<p class="zoom-level">Zoom: <span id="zoomPercent">100</span>%</p>
+</div>
 
-            <div class="info-panel">
-                <p>Wrong guesses remaining: <span id="guessesLeft">6</span> / 6</p>
-                <div class="attempts-display">
-                    <div id="attemptsList"></div>
-                </div>
-            </div>
+<div class="info-panel">
+<p>Wrong guesses remaining: <span id="guessesLeft">6</span> / <span id="maxGuessesLabel">6</span></p>
+<div class="attempts-display">
+<div id="attemptsList"></div>
+</div>
+</div>
 
-            <div class="input-area">
-                <input 
-                    type="text" 
-                    id="guessInput" 
-                    placeholder="Type your guess..." 
-                    autocomplete="off"
-                >
-                <button id="submitBtn">Guess</button>
-            </div>
+<div class="input-area">
+<input
+type="text"
+id="guessInput"
+placeholder="Type your guess..."
+autocomplete="off"
+>
+<button id="submitBtn">Guess</button>
+</div>
 
-            <div id="message" class="message"></div>
+<div id="message" class="message"></div>
 
-            <button id="newGameBtn" class="hidden">New Game</button>
-        </div>
+<button id="newGameBtn" class="hidden">New Game</button>
+</div>
 
-        <footer>
-            <p>Get closer with each wrong guess. How fast can you guess them all?</p>
-        </footer>
-    </div>
+<footer>
+<p>Get closer with each wrong guess. How fast can you guess them all?</p>
+</footer>
+</div>
 
-    <script src="game.js"></script>
+<div id="helpModal" class="modal hidden">
+<div class="modal-content">
+<button class="modal-close" id="closeHelpBtn" aria-label="Close">&times;</button>
+<h2>How to Play</h2>
+<ol>
+<li>Look at the heavily blurred icon.</li>
+<li>Guess which brand or app it is.</li>
+<li>Each wrong guess reveals more of the icon.</li>
+<li>Daily Challenge gives everyone the same icon each day. Practice mode is unlimited random rounds.</li>
+<li>Turn on Hard Mode for fewer guesses and an extra challenge.</li>
+</ol>
+<p class="help-example">Example: typing "X", "Twitter", or "Elon" will all work for the X (formerly Twitter) brand.</p>
+</div>
+</div>
+
+<div id="statsModal" class="modal hidden">
+<div class="modal-content">
+<button class="modal-close" id="closeStatsBtn" aria-label="Close">&times;</button>
+<h2>Statistics</h2>
+<div class="stats-grid">
+<div class="stat"><span id="statPlayed">0</span><label>Played</label></div>
+<div class="stat"><span id="statWinPct">0</span><label>Win %</label></div>
+<div class="stat"><span id="statStreak">0</span><label>Current Streak</label></div>
+<div class="stat"><span id="statMaxStreak">0</span><label>Max Streak</label></div>
+</div>
+<h3>Guess Distribution</h3>
+<div id="guessDistribution" class="guess-distribution"></div>
+<div class="countdown-section">
+<p>Next Daily Iconle</p>
+<span id="countdown">00:00:00</span>
+</div>
+<button id="shareBtn" class="share-btn">Share Results</button>
+</div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="game.js"></script>
 </body>
 </html>
