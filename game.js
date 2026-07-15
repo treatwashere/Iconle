@@ -203,7 +203,7 @@ class Iconle {
           this.gameOver = saved.gameOver;
           this.won = saved.won;
           this.dailyRecorded = saved.recorded || false;
-          this.currentZoom = Math.min(this.wrongGuesses.length, this.zoomLevels.length - 1);
+          this.currentZoom = this.won ? this.zoomLevels.length - 1 : Math.min(this.wrongGuesses.length, this.zoomLevels.length - 1);
 
         this.updateDisplay();
 
@@ -270,6 +270,7 @@ class Iconle {
         if (isCorrect) {
                   this.won = true;
                   this.gameOver = true;
+                  this.currentZoom = this.zoomLevels.length - 1;
                   this.showMessage(`Correct! It's ${this.currentBrand.name}!`, 'success');
                   this.guessInput.disabled = true;
                   this.submitBtn.disabled = true;
